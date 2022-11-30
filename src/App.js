@@ -2,11 +2,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 import './App.css';
+import NavBar from './components/Home/NavBar/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <i class="fa-solid fa-cart-shopping"></i>
     </div>
   );
 }
