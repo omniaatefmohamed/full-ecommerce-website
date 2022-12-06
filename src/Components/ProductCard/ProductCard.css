@@ -1,0 +1,12 @@
+.product-card {
+    box-shadow: -1px 10px 21px #d9d9d9;
+    border-radius: 40px;
+}
+.fa-star{
+    color:#eac72e;
+}
+.product-card img {
+    height: 158px;
+    width: 200px;
+    padding: 20px;
+}

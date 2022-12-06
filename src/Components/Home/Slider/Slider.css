@@ -1,0 +1,8 @@
+.carousel-inner img {
+    height: 300px;
+    width: 300px;
+}
+
+.carousel-item {
+    background-color: #003455;
+}

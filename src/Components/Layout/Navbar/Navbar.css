@@ -1,4 +1,40 @@
-.logo{
-    width:140px;
-    height:140px
+.logo {
+    width: 106px;
+    height: 70px;
+}
+.navbar {
+    background-color: var(--dark-blue)
+}
+.fa-solid.fa-magnifying-glass{
+    display: none;
+}
+
+@media(max-width:992px) {
+    .reverse {
+        position: absolute;
+        top: 21px;
+        right: 73px;
+    }
+    .profile-name span {
+        display: none;
+        color: #fff;
+    }
+    .reverse{
+        height:40px;
+    }
+    .navbar-nav.navbar-nav-scroll{
+        max-height:100%!important;
+    }
+    .fa-solid.fa-magnifying-glass{
+        display: block;
+    }
+    
+    input[type="search"]{
+        display: none;
+        position: fixed;
+        right:0;
+        left:0;
+        width:100%;
+        top:80px;
+    }
 }

@@ -1,38 +1,60 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: roboto;
+  src: url(./assets/fonts/RobotoSlab.ttf);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  font-family: roboto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+:root {
+  --dark-blue: #003455;
+  --orange-color: #ff4a1a;
+  --font-12: 12px;
+  --font-14: 14px;
+  --font-16: 16px;
+  --font-24: 24px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.font-12 {
+  font-size: var(--font-12)
 }
 
-.App-link {
-  color: #61dafb;
+.font-14 {
+  font-size: var(--font-14)
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.font-16 {
+  font-size: var(--font-16)
+}
+
+.font-24 {
+  font-size: var(--font-24)
+}
+
+.orange-color {
+  color: var(--orange-color)
+}
+
+.dark-blue-color,
+.form-label {
+  color: var(--dark-blue)
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--dark-blue);
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover, 
+input:-webkit-autofill:focus, 
+input:-webkit-autofill:active{
+    -webkit-box-shadow: none;
+   
+}
+input:-webkit-autofill{
+  -webkit-background-color: white;
+}
+.Auth-form button{
+  background-color: var(--dark-blue);
 }

@@ -1,51 +1,50 @@
 import React from 'react'
 import './Navbar.css'
 import white_logo from '../../../assets/images/white-logo.png'
-import { Button, Container, Form, Nav, Navbar, NavDropdown } from 'react-bootstrap';
+import { Container, Form, Nav, Navbar } from 'react-bootstrap';
 const NavBar = () => {
+    let SearchState = false;
+    const showSearch = () => {
+        SearchState = !SearchState;
+    }
     return (
-        <div>
-            <Navbar bg="light" expand="lg">
-                <Container>
-                    <Navbar.Brand href="#">
-                        <img src={white_logo} className="logo"/>
-                    </Navbar.Brand>
-                    <Navbar.Toggle aria-controls="navbarScroll" />
-                    <Navbar.Collapse id="navbarScroll">
-                        <Nav
-                            className="me-auto my-2 my-lg-0"
-                            style={{ maxHeight: '100px' }}
-                            navbarScroll
-                        >
-                            <Nav.Link href="#action1">Home</Nav.Link>
-                            <Nav.Link href="#action2">Link</Nav.Link>
-                            <NavDropdown title="Link" id="navbarScrollingDropdown">
-                                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
-                                <NavDropdown.Item href="#action4">
-                                    Another action
-                                </NavDropdown.Item>
-                                <NavDropdown.Divider />
-                                <NavDropdown.Item href="#action5">
-                                    Something else here
-                                </NavDropdown.Item>
-                            </NavDropdown>
-                            <Nav.Link href="#" disabled>
-                                Link
-                            </Nav.Link>
-                        </Nav>
-                        <Form className="d-flex">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
-        </div>
+        <Navbar expand="lg">
+            <Container className="position-relative">
+                <Navbar.Brand >
+                    <a href="/">
+                        <img src={white_logo} className="logo" />
+                    </a>
+                </Navbar.Brand>
+                <Navbar.Toggle aria-controls="navbarScroll" className='bg-white' />
+                <Navbar.Collapse id="navbarScroll">
+                    <Nav
+                        className="me-auto my-2 my-lg-0"
+                        style={{ maxHeight: '100px' }}
+                        navbarScroll
+                    >
+                        <Nav.Link href="/" className='text-white'>Home</Nav.Link>
+                        <Nav.Link href="#action2" className='text-white'>Mobiles</Nav.Link>
+                        <Nav.Link href="#action2" className='text-white'>Laptop</Nav.Link>
+                        <Nav.Link href="#action2" className='text-white'>Bags</Nav.Link>
+                    </Nav>
+                </Navbar.Collapse>
+                <div className='d-flex flex-row-reverse reverse flex-lg-row align-items-center'>
+                    <Form className="d-flex  mx-1">
+                        <Form.Control
+                            type="search"
+                            placeholder="Search"
+                            className="me-2"
+                            aria-label="Search"
+                        />
+                        <i className="fa-solid fa-magnifying-glass text-white  mx-1" onClick={showSearch}></i>
+                    </Form>
+                    <div className='profile-name d-flex'>
+                        <Nav.Link href="/login" className='text-white font-12 mx-1'> <i class="fa-solid fa-user font-16 mx-1"></i> <span> Login In </span> </Nav.Link>
+                        <Nav.Link href="#action1" className='text-white font-12 mx-1'> <i class="fa-solid fa-cart-shopping font-16 mx-1"></i> <span> Cart </span> </Nav.Link>
+                    </div>
+                </div>
+            </Container>
+        </Navbar>
     )
 }
 

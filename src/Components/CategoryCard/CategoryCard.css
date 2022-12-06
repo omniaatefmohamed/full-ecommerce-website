@@ -1,0 +1,11 @@
+.category-Card{
+    box-shadow: -1px 10px 21px #d9d9d9;
+    border-radius: 40px;
+}
+.category-Card:hover{
+    box-shadow: -1px 10px 21px #d9d9d9;
+}
+.category-Card img{
+    height:230px;
+    border-bottom: 1px solid #d5d3d4;
+}

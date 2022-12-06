@@ -1,0 +1,37 @@
+import React from 'react'
+import './Login.css'
+import { Form, Button, Container, Col, Row } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
+
+const Login = () => {
+    return (
+        <Container className='Auth-form my-5'>
+            <Row className='d-flex align-items-center justify-content-center flex-column'>
+                <Col lg="7" md="8" sm="12">
+                    <Form className='my-5 shadow p-5'>
+                        <Form.Group className="mb-3" controlId="formBasicEmail">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="Enter email" />
+                        </Form.Group>
+
+                        <Form.Group className="mb-3" controlId="formBasicPassword">
+                            <Form.Label>Password</Form.Label>
+                            <Form.Control type="password" placeholder="Password" />
+                        </Form.Group>
+                        <Form.Group className="mb-3 font-12" controlId="formBasicCheckbox">
+                            <Form.Check type="checkbox" label="Please Remeber me" />
+                        </Form.Group>
+                        <Button type="submit" className='border-0 d-block mx-auto justify-content-center w-lg-25 w-75'>
+                            Sign In
+                        </Button>
+                        <Form.Group className="my-2 text-center ">
+                            <Form.Label><Link to="/register" className='text-decoration-none font-14 orange-color'> I haven't Account | SignUp</Link></Form.Label>
+                        </Form.Group>
+                    </Form>
+                </Col>
+            </Row>
+        </Container>
+    )
+}
+
+export default Login
