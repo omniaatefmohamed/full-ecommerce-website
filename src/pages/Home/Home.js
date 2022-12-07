@@ -1,8 +1,8 @@
 import React from 'react'
-import Navbar from '../../Components/Layout/Navbar/Navbar'
-import Slider from '../../Components/Home/Slider/Slider'
+import Slider from '../../Components/Slider/Slider'
 import CategoryContainer from '../../Components/CategoryContainer/CategoryContainer'
 import ProductContainer from '../../Components/ProductContainer/ProductContainer'
+import BrandContainer from '../../Components/BrandContainer/BrandContainer'
 
 const Home = () => {
   return (
@@ -13,6 +13,7 @@ const Home = () => {
       <ProductContainer categoryName="Bags" linkName="See More" />
       <ProductContainer categoryName="Laptops" linkName="See More" />
       <ProductContainer categoryName="Mobile" linkName="See More" />
+      <BrandContainer/>
     </div>
   )
 }

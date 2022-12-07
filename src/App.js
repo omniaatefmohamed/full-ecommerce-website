@@ -6,6 +6,7 @@ import NavBar from './Components/Layout/Navbar/Navbar';
 import Login from './pages/Auth/Login/Login';
 import Register from './pages/Auth/Register/Register';
 import AllCategory from './pages/AllCategory/AllCategory';
+import AllBrands from './pages/AllBrands/AllBrands';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register/>}/>
           <Route path="/allcategory" element={<AllCategory/>}/>
+          <Route path="/allbrands" element={<AllBrands/>}/>
         </Routes>
       </BrowserRouter>
 
