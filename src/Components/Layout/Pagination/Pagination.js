@@ -12,6 +12,7 @@ const Pagination = () => {
             initialPage={1}
             pageRangeDisplayed={2}
             pageCount={100}
+            marginPagesDisplayed	={0}
             previousClassName="previousPage"
             previousLinkClassName="page-link"
             nextLinkClassName="page-link"
