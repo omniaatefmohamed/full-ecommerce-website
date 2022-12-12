@@ -9,11 +9,11 @@ const Home = () => {
     <div>
       <Slider />
       <CategoryContainer />
-      <ProductContainer categoryName="Most Popular" linkName="See More" />
-      <ProductContainer categoryName="Bags" linkName="See More" />
-      <ProductContainer categoryName="Laptops" linkName="See More" />
-      <ProductContainer categoryName="Mobile" linkName="See More" />
-      <BrandContainer/>
+      <ProductContainer categoryName="Most Popular" linkName="See More" PathCategory="/search" />
+      <ProductContainer categoryName="Bags" linkName="See More" PathCategory="/search" />
+      <ProductContainer categoryName="Laptops" linkName="See More" PathCategory="/search" />
+      <ProductContainer categoryName="Mobile" linkName="See More" PathCategory="/search" />
+      <BrandContainer />
     </div>
   )
 }
