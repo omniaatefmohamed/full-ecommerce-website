@@ -1,3 +1,4 @@
+import axios from 'axios'
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Pagination from '../../Components/Layout/Pagination/Pagination'
@@ -6,7 +7,6 @@ import category2 from './../../assets/images/category2.png'
 import category3 from './../../assets/images/category3.png'
 import category4 from './../../assets/images/category4.jpg'
 import CategoryCard from '../../Components/CategoryCard/CategoryCard'
-import axios from 'axios'
 import './AllCategory.css'
 const AllCategory = () => {
     const get = async () => {
