@@ -8,7 +8,7 @@ import Register from './pages/Auth/Register/Register';
 import AllCategory from './pages/AllCategory/AllCategory';
 import AllBrands from './pages/AllBrands/AllBrands';
 import Search from './pages/Search/Search';
-
+import React from 'react'
 function App() {
   return (
     <div className="App">

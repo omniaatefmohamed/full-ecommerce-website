@@ -39,7 +39,7 @@ const NavBar = () => {
                         <i className="fa-solid fa-magnifying-glass text-white  mx-1" onClick={showSearch}></i>
                     </Form>
                     <div className='profile-name d-flex'>
-                        <Nav.Link href="/login" className='text-white font-12 mx-1'> <i class="fa-solid fa-user font-16 mx-1"></i> <span> Login In </span> </Nav.Link>
+                        <Nav.Link href="/login" className='text-white font-12 mx-1'> <i className="fa-solid fa-user font-16 mx-1"></i> <span> Login In </span> </Nav.Link>
                         <Nav.Link href="#action1" className='text-white font-12 mx-1'> <i class="fa-solid fa-cart-shopping font-16 mx-1"></i> <span> Cart </span> </Nav.Link>
                     </div>
                 </div>
