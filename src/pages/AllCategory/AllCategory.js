@@ -7,10 +7,11 @@ import category2 from './../../assets/images/category2.png'
 import category3 from './../../assets/images/category3.png'
 import category4 from './../../assets/images/category4.jpg'
 import CategoryCard from '../../Components/CategoryCard/CategoryCard'
+import BaseURL from '../../API/BaseUrl'
 import './AllCategory.css'
 const AllCategory = () => {
     const get = async () => {
-        const res = await axios.get("http://127.0.0.1:8000/api/v1/categories")
+        const res = await BaseURL.get("/api/v1/categories")
         console.log(res.data)
     }
     useEffect(() => {
