@@ -10,13 +10,7 @@ import CategoryCard from '../../Components/CategoryCard/CategoryCard'
 import BaseURL from '../../API/BaseUrl'
 import './AllCategory.css'
 const AllCategory = () => {
-    const get = async () => {
-        const res = await BaseURL.get("/api/v1/categories")
-        console.log(res.data)
-    }
-    useEffect(() => {
-        get();
-    }, [])
+
     return (
         <Container className='my-5'>
             <h1 className='font-24 mb-5'>AllCategory</h1>

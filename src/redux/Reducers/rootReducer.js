@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import allCategoriesReducer from './allCategoriesReducer'
+import CategoriesReducer from './CategoriesReducer'
 export default combineReducers ({
-    allCategory : allCategoriesReducer
+    allCategory : CategoriesReducer
 })
