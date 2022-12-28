@@ -2,37 +2,32 @@ import axios from 'axios'
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import Pagination from '../../Components/Layout/Pagination/Pagination'
-import category1 from './../../assets/images/slider3.png'
-import category2 from './../../assets/images/category2.png'
-import category3 from './../../assets/images/category3.png'
-import category4 from './../../assets/images/category4.jpg'
 import CategoryCard from '../../Components/CategoryCard/CategoryCard'
-import BaseURL from '../../API/BaseUrl'
 import './AllCategory.css'
-const AllCategory = () => {
+import { useSelector, useDispatch } from 'react-redux'
+import { getAllCategory } from '../../redux/Actions/CategoryAction'
+import Spinner from 'react-bootstrap/Spinner';
 
+const AllCategory = () => {
+    const dispatch = useDispatch();
+    useEffect(() => {
+        dispatch(getAllCategory())
+    })
+
+    const data = useSelector(state => state.allCategory.category)
+    const loading = useSelector(state => state.allCategory.loading)
+    const backgrounds = ["red","yellow","green"]
+ 
     return (
         <Container className='my-5'>
             <h1 className='font-24 mb-5'>AllCategory</h1>
             <Row>
-                <CategoryCard CategoryTitle="Bags" imgSrc={category1} />
-                <CategoryCard CategoryTitle="LapTops" imgSrc={category2} />
-                <CategoryCard CategoryTitle="Mobiles" imgSrc={category3} />
-                <CategoryCard CategoryTitle="Furniture" imgSrc={category4} />
-                <CategoryCard CategoryTitle="Bags" imgSrc={category1} />
-                <CategoryCard CategoryTitle="LapTops" imgSrc={category2} />
-                <CategoryCard CategoryTitle="Mobiles" imgSrc={category3} />
-                <CategoryCard CategoryTitle="Furniture" imgSrc={category4} />
-                <CategoryCard CategoryTitle="Bags" imgSrc={category1} />
-                <CategoryCard CategoryTitle="LapTops" imgSrc={category2} />
-                <CategoryCard CategoryTitle="Mobiles" imgSrc={category3} />
-                <CategoryCard CategoryTitle="Furniture" imgSrc={category4} />
-                <CategoryCard CategoryTitle="Bags" imgSrc={category1} />
-                <CategoryCard CategoryTitle="LapTops" imgSrc={category2} />
-                <CategoryCard CategoryTitle="Mobiles" imgSrc={category3} />
-                <CategoryCard CategoryTitle="Furniture" imgSrc={category4} />
+                {loading === false ? (
+                    data.data ? (data.data.map((item,index) => {
+                        return (<CategoryCard key={index} CategoryTitle={item.name} background={backgrounds[Math.floor(Math.random()*5) + 1]}/>)
+                    })) : (<h3>no data</h3>)
+                ) : <Spinner animation="border" variant="info" />}
             </Row>
-
             <Pagination />
         </Container>
     )

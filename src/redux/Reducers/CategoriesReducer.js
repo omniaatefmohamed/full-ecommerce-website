@@ -1,10 +1,10 @@
 import { Get_All_Category, Get_Error } from '../Types/Types'
 
-
 const initial = {
     category: [],
     loading: true
 }
+
 const CategoriesReducer = ((state = initial, action) => {
     switch (action.type) {
         case Get_All_Category:
