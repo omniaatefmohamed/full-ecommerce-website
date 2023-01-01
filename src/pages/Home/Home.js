@@ -1,14 +1,14 @@
 import React from 'react'
-import Slider from '../../Components/Slider/Slider'
-import CategoryContainer from '../../Components/CategoryContainer/CategoryContainer'
-import ProductContainer from '../../Components/ProductContainer/ProductContainer'
-import BrandContainer from '../../Components/BrandContainer/BrandContainer'
+import Slider from '../../Components/Home/Slider/Slider'
+import ProductContainer from '../../Components/Product/ProductCard/ProductCard'
+import BrandContainer from '../../Components/Brand/BrandContainer/BrandContainer'
+import CategoryContainerHome from '../../Components/Home/CategoryContainerHome/CategoryContainerHome'
 
 const Home = () => {
   return (
     <div>
       <Slider />
-      <CategoryContainer />
+      <CategoryContainerHome />
       <ProductContainer categoryName="Most Popular" linkName="See More" PathCategory="/search" />
       <ProductContainer categoryName="Bags" linkName="See More" PathCategory="/search" />
       <ProductContainer categoryName="Laptops" linkName="See More" PathCategory="/search" />

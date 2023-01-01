@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react'
 import { Container, Row } from 'react-bootstrap'
 import CategoryCard from '../CategoryCard/CategoryCard'
-import CategoryName from '../Layout/CategoryName/CategoryName'
+import CategoryName from '../../Layout/CategoryName/CategoryName'
 import './CategoryContainer.css'
 import { useSelector, useDispatch } from 'react-redux'
-import { getAllCategory } from '../../redux/Actions/CategoryAction'
+import { getAllCategory } from '../../../redux/Actions/CategoryAction'
 import Spinner from 'react-bootstrap/Spinner';
 
 const CategoryContainer = () => {

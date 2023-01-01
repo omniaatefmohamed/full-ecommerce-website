@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import './Slider.css'
 import { Carousel } from 'react-bootstrap';
-import slider1 from './../../assets/images/slider1.png'
-import slider2 from './../../assets/images/category4.jpg'
-import slider3 from './../../assets/images/labtop.png'
-import slider4 from './../../assets/images/slider4.png'
+import slider1 from './../../../assets/images/slider1.png'
+import slider2 from './../../../assets/images/category4.jpg'
+import slider3 from './../../../assets/images/labtop.png'
+import slider4 from './../../../assets/images/slider4.png'
 
 const Slider = () => {
     const [index, setIndex] = useState(0);

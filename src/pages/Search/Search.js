@@ -1,6 +1,6 @@
 import React from 'react'
-import CategoryBar from '../../Components/CategoryBar/CategoryBar'
-import SearchCount from '../../Components/searchCount/SearchCount'
+import CategoryBar from '../../Components/Category/CategoryBar/CategoryBar'
+import SearchCount from '../../Components/Search/searchCount/SearchCount'
 
 const Search = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react'
 import BrandCard from '../BrandCard/BrandCard'
 import './BrandContainer.css'
-import brand1 from '../../assets/images/brand1.png'
-import brand2 from '../../assets/images/brand2.png'
-import brand3 from '../../assets/images/brand3.png'
+import brand1 from '../../../assets/images/brand1.png'
+import brand2 from '../../../assets/images/brand2.png'
+import brand3 from '../../../assets/images/brand3.png'
 import { Container, Row } from 'react-bootstrap'
-import CategoryName from '../Layout/CategoryName/CategoryName'
+import CategoryName from '../../Layout/CategoryName/CategoryName'
 const BrandContainer = () => {
     return (
         <Container>

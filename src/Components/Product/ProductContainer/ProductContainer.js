@@ -1,10 +1,10 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import CategoryName from '../Layout/CategoryName/CategoryName'
-import ProductCard from '../ProductCard/ProductCard'
-import product1 from './../../assets/images/prod1.png'
-import product2 from './../../assets/images/prod3.png'
-import product3 from './../../assets/images/slider3.png'
+import CategoryName from '../../../Layout/CategoryName/CategoryName'
+import ProductCard from '../ProductCard'
+import product1 from '../../../assets/images/prod1.png'
+import product2 from '../../../assets/images/prod3.png'
+import product3 from '../../../assets/images/slider3.png'
 
 const ProductContainer = ({ categoryName, linkName, PathCategory }) => {
     return (
